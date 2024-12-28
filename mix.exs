@@ -19,7 +19,7 @@ defmodule IndonesianId.MixProject do
 
   defp docs do
     [
-      main: "IndonesianId",
+      main: "IndonesianId"
       # logo: "logo.png",
       # extras: ["LICENSE.md", "CHANGELOG.md"]
     ]
@@ -38,6 +38,7 @@ defmodule IndonesianId.MixProject do
       {:styler, "~> 1.2", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
     ]
   end
 end
