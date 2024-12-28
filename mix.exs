@@ -10,7 +10,7 @@ defmodule IndonesianId.MixProject do
       deps: deps(),
 
       # Docs
-      name: "IndonesianID",
+      name: "Indonesian_id",
       source_url: "https://github.com/muzhawir/indonesian_id",
       homepage_url: "https://github.com/muzhawir/indonesian_id",
       docs: &docs/0
@@ -19,9 +19,9 @@ defmodule IndonesianId.MixProject do
 
   defp docs do
     [
-      main: "IndonesianId"
+      main: "readme",
       # logo: "logo.png",
-      # extras: ["LICENSE.md", "CHANGELOG.md"]
+      extras: ["README.md"]
     ]
   end
 
