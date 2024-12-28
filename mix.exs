@@ -10,9 +10,9 @@ defmodule IndonesianId.MixProject do
       deps: deps(),
 
       # Docs
-      name: "IndonesianId",
-      source_url: "https://github.com/USER/PROJECT",
-      homepage_url: "http://YOUR_PROJECT_HOMEPAGE",
+      name: "IndonesianID",
+      source_url: "https://github.com/muzhawir/indonesian_id",
+      homepage_url: "https://github.com/muzhawir/indonesian_id",
       docs: &docs/0
     ]
   end
@@ -38,7 +38,7 @@ defmodule IndonesianId.MixProject do
       {:styler, "~> 1.2", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.34", only: :dev, runtime: false},
-      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false}
     ]
   end
 end
