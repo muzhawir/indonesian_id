@@ -62,7 +62,7 @@ defmodule Nip.Utils do
     cond do
       sex_from_nip == "1" -> {:ok, "M"}
       sex_from_nip == "2" -> {:ok, "F"}
-      true -> {:error, "Invalid sex code"}
+      true -> {:error, "Invalid sex number code"}
     end
   end
 
