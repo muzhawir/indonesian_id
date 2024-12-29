@@ -13,8 +13,7 @@ defmodule Nip.Pns do
   ## Examples
 
       iex> Nip.Pns.parse("196711101992031001")
-      {:ok,
-      %Nip.Pns{
+      {:ok, %Nip.Pns{
         nip: "196711101992031001",
         birth_date: "1967-11-10",
         tmt_date: "1992-03-01",
@@ -25,20 +24,27 @@ defmodule Nip.Pns do
   """
   @spec parse(String.t()) :: {:ok, struct()} | {:error, String.t()}
   def parse(nip) when is_binary(nip) do
-    with {:ok, _} <- validate_nip_length(nip),
-         {:ok, birth_date} <- get_birth_date(nip),
-         {:ok, tmt_date} <- get_tmt(nip),
-         {:ok, sex_code} <- get_sex_code(nip),
-         {:ok, serial_number} <- get_serial_number(nip) do
-      parsed_value = %Nip.Pns{
-        nip: nip,
-        birth_date: Date.to_string(birth_date),
-        tmt_date: Date.to_string(tmt_date),
-        sex: sex_code,
-        serial_number: serial_number
-      }
+    case validate_format(nip) do
+      {:ok, _} ->
+        {_, birth_date} = get_birth_date(nip)
 
-      {:ok, parsed_value}
+        {_, tmt_date} = get_tmt(nip)
+
+        {_, sex_code} = get_sex_code(nip)
+
+        {_, serial_number} = get_serial_number(nip)
+
+        {:ok,
+         %Nip.Pns{
+           nip: nip,
+           birth_date: Date.to_string(birth_date),
+           tmt_date: Date.to_string(tmt_date),
+           sex: sex_code,
+           serial_number: serial_number
+         }}
+
+      {:error, reason} ->
+        {:error, reason}
     end
   end
 
@@ -59,12 +65,31 @@ defmodule Nip.Pns do
 
     month = String.slice(tmt_date_from_nip, 4..5)
 
-    date = Date.from_iso8601("#{year}-#{month}-01")
+    parses_date = Date.from_iso8601("#{year}-#{month}-01")
 
-    case date do
-      {:ok, _} -> date
-      {:error, :invalid_format} -> {:error, "Invalid TMT date format, must be YYYYMM"}
-      {:error, :invalid_date} -> {:error, "Invalid TMT date, must be valid date format"}
+    case parses_date do
+      {:ok, date} -> {:ok, date}
+      {:error, reason} -> {:error, reason}
+    end
+  end
+
+  @doc """
+  Validate NIP format.
+
+  ## Examples
+
+      iex> Nip.Pns.validate_format("196711101992031001")
+      "196711101992031001"
+
+  """
+  @spec validate_format(String.t()) :: {:ok | :error, String.t()}
+  def validate_format(nip) when is_binary(nip) do
+    with {:ok, _} <- validate_length(nip),
+         {:ok, _} <- get_birth_date(nip),
+         {:ok, _} <- get_tmt(nip),
+         {:ok, _} <- get_sex_code(nip),
+         {:ok, _} <- get_serial_number(nip) do
+      {:ok, nip}
     end
   end
 end
