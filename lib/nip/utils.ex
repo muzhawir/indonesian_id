@@ -6,8 +6,8 @@ defmodule Nip.Utils do
 
   ## Examples
 
-      iex> Nip.Utils.validate_length("196711101992031001")
-      {:ok, "196711101992031001"}
+      iex> Nip.Utils.validate_length("200012312024121001")
+      {:ok, "200012312024121001"}
 
   """
   @spec validate_length(String.t()) :: {:ok | :error, String.t()}
@@ -24,8 +24,8 @@ defmodule Nip.Utils do
 
   ## Examples
 
-      iex> Nip.Utils.get_birth_date("196711101992031001")
-      {:ok, ~D[1967-11-10]}
+      iex> Nip.Utils.get_birth_date("200012312024121001")
+      {:ok, ~D[2000-12-31]}
 
   """
   @spec get_birth_date(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
@@ -51,7 +51,7 @@ defmodule Nip.Utils do
 
   ## Examples
 
-      iex> Nip.Utils.get_sex_code("196711101992031001")
+      iex> Nip.Utils.get_sex_code("200012312024121001")
       {:ok, "M"}
 
   """
@@ -71,7 +71,7 @@ defmodule Nip.Utils do
 
   ## Examples
 
-      iex> Nip.Utils.get_serial_number("196711101992031001")
+      iex> Nip.Utils.get_serial_number("200012312024121001")
       {:ok, "001"}
 
   """
