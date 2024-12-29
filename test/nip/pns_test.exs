@@ -10,28 +10,28 @@ defmodule Nip.PnsTest do
       result =
         {:ok,
          %Pns{
-           nip: "196711101992031001",
-           birth_date: "1967-11-10",
-           tmt_date: "1992-03-01",
+           nip: "200012312024121001",
+           birth_date: "2000-12-31",
+           tmt_date: "2024-12-01",
            sex: "M",
            serial_number: "001"
          }}
 
-      assert Pns.parse("196711101992031001") === result
+      assert Pns.parse("200012312024121001") === result
     end
 
     test "parses invalid NIP" do
-      assert Pns.parse("19671110199203100") === {:error, "Invalid length"}
+      assert Pns.parse("20001231202412100") === {:error, "Invalid length"}
     end
   end
 
   describe "validate_format/1" do
     test "valid NIP" do
-      assert Pns.validate_format("196711101992031001") === {:ok, "196711101992031001"}
+      assert Pns.validate_format("200012312024121001") === {:ok, "200012312024121001"}
     end
 
     test "invalid NIP" do
-      assert Pns.validate_format("19671110199203100") === {:error, "Invalid length"}
+      assert Pns.validate_format("20001231202412100") === {:error, "Invalid length"}
     end
   end
 end
