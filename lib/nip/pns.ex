@@ -79,7 +79,7 @@ defmodule Nip.Pns do
   ## Examples
 
       iex> Nip.Pns.validate_format("196711101992031001")
-      "196711101992031001"
+      {:ok, "196711101992031001"}
 
   """
   @spec validate_format(String.t()) :: {:ok | :error, String.t()}
