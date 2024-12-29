@@ -1,24 +1,21 @@
 defmodule Nip.Utils do
-  @moduledoc """
-  Utility functions for working with NIP PNS (Pegawai Negeri Sipil) and PPPK (Pegawai Pemerintah
-  dengan Perjanjian Kerja).
-  """
+  @moduledoc false
 
   @doc """
   Validate NIP length, must be 18 characters.
 
   ## Examples
 
-      iex> Nip.Utils.validate_nip_length("196711101992031001")
-      {:ok, "NIP length is valid"}
+      iex> Nip.Utils.validate_length("196711101992031001")
+      {:ok, "196711101992031001"}
 
   """
-  @spec validate_nip_length(String.t()) :: {:ok, String.t()} | {:error, String.t()}
-  def validate_nip_length(nip) when is_binary(nip) do
+  @spec validate_length(String.t()) :: {:ok | :error, String.t()}
+  def validate_length(nip) when is_binary(nip) do
     if String.length(nip) === 18 do
-      {:ok, "NIP length is valid"}
+      {:ok, nip}
     else
-      {:error, "NIP length is invalid, must be 18 characters"}
+      {:error, "Invalid length"}
     end
   end
 
@@ -44,9 +41,8 @@ defmodule Nip.Utils do
     date = Date.from_iso8601("#{year}-#{month}-#{day}")
 
     case date do
-      {:ok, _} -> date
-      {:error, :invalid_format} -> {:error, "Invalid birth date format, must ber YYYYMMDD"}
-      {:error, :invalid_date} -> {:error, "Invalid birth date, must be valid date format"}
+      {:ok, value} -> {:ok, value}
+      {:error, reason} -> {:error, reason}
     end
   end
 
@@ -59,14 +55,14 @@ defmodule Nip.Utils do
       {:ok, "M"}
 
   """
-  @spec get_sex_code(String.t()) :: {:ok, String.t()} | {:error, String.t()}
+  @spec get_sex_code(String.t()) :: {:ok | :error, String.t()}
   def get_sex_code(nip) when is_binary(nip) do
     sex_from_nip = String.slice(nip, 14..14)
 
     cond do
       sex_from_nip == "1" -> {:ok, "M"}
       sex_from_nip == "2" -> {:ok, "F"}
-      true -> {:error, "Invalid Sex Code, must be 1 or 2"}
+      true -> {:error, "Invalid sex code"}
     end
   end
 
@@ -80,13 +76,13 @@ defmodule Nip.Utils do
 
   """
   @spec get_serial_number(String.t()) :: {:ok | :error, String.t()}
-  def get_serial_number(nip) when is_binary(nip) do
+  def(get_serial_number(nip) when is_binary(nip)) do
     serial_number_from_nip = String.slice(nip, 15..18)
 
     if String.to_integer(serial_number_from_nip) in 1..999 do
       {:ok, serial_number_from_nip}
     else
-      {:error, "Invalid Serial Number, must be between 001 and 999"}
+      {:error, "Serial number out of range"}
     end
   end
 end
