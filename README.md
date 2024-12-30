@@ -1,6 +1,6 @@
 # indonesian_id
 
-indonesian_id is an Elixir package for working with Indonesian variuos Identification Numbers.
+An Elixir package for parsing and validating various Indonesian Identification Numbers.
 It provides utility functions to parse, validate, and extract information from these identification
 numbers.
 
@@ -12,7 +12,7 @@ numbers.
 ```elixir
 def deps do
   [
-    {:indonesian_id, "~> 0.1.0"}
+    {:indonesian_id, "~> 1.0.0"}
   ]
 end
 ```
