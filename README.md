@@ -1,4 +1,6 @@
-# Indonesian ID
+# indonesian_id
+
+![Hex.pm Version](https://img.shields.io/hexpm/v/indonesian_id) ![Hex.pm Downloads](https://img.shields.io/hexpm/dt/indonesian_id) [![Elixir CI](https://github.com/muzhawir/indonesian_id/actions/workflows/elixir.yml/badge.svg?branch=main)](https://github.com/muzhawir/indonesian_id/actions/workflows/elixir.yml)
 
 A package for parsing and validating Indonesian identification numbers. This library provides
 functions to ensure the format and validity of these IDs, making it easier to handle Indonesian
