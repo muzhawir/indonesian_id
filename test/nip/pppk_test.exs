@@ -11,9 +11,9 @@ defmodule Nip.PppkTest do
         {:ok,
          %Nip.Pppk{
            nip: "200012312024211001",
-           birth_date: "2000-12-31",
-           tmt_date: "2024-01-01",
-           frequency: "1",
+           birth_date: ~D[2000-12-31],
+           tmt_date: ~D[2024-01-01],
+           frequency: 1,
            sex: "M",
            serial_number: "001"
          }}
@@ -22,27 +22,9 @@ defmodule Nip.PppkTest do
     end
 
     test "parses invalid NIP" do
-      refute Pppk.parse("200012312024211001") === {:error, "Invalid length"}
-    end
-  end
-
-  describe "get_tmt/1" do
-    test "valid TMT date" do
-      assert Pppk.get_tmt("200012312024211001") === {:ok, ~D[2024-01-01]}
-    end
-
-    test "invalid TMT date" do
-      refute Pppk.get_tmt("200012312024211001") === {:error, :invalid_format}
-    end
-  end
-
-  describe "get_frequency/1" do
-    test "valid frequency number" do
-      assert Pppk.get_frequency("200012312024211001") === {:ok, "1"}
-    end
-
-    test "frequency out of range" do
-      refute Pppk.get_frequency("200012312024211001") === {:error, "frequency out of range"}
+      assert Pppk.parse("20001231202421100") === {:error, "Invalid length"}
+      assert Pppk.parse("200013312024211001") === {:error, :invalid_date}
+      assert Pppk.parse("200012312024213001") === {:error, "Invalid sex number code"}
     end
   end
 
@@ -52,7 +34,9 @@ defmodule Nip.PppkTest do
     end
 
     test "invalid NIP" do
-      refute Pppk.validate_format("200012312024211001") === {:error, "Invalid length"}
+      assert Pppk.validate_format("20001231202421100") === {:error, "Invalid length"}
+      assert Pppk.validate_format("200013312024211001") === {:error, :invalid_date}
+      assert Pppk.validate_format("200012312024213001") === {:error, "Invalid sex number code"}
     end
   end
 end

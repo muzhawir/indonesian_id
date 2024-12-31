@@ -6,13 +6,13 @@ defmodule Nip.PnsTest do
   doctest Nip.Pns
 
   describe "parse/1" do
-    test "parses valid NIP" do
+    test "parse valid NIP" do
       result =
         {:ok,
-         %Pns{
+         %Nip.Pns{
            nip: "200012312024121001",
-           birth_date: "2000-12-31",
-           tmt_date: "2024-12-01",
+           birth_date: ~D[2000-12-31],
+           tmt_date: ~D[2024-12-01],
            sex: "M",
            serial_number: "001"
          }}
@@ -20,8 +20,10 @@ defmodule Nip.PnsTest do
       assert Pns.parse("200012312024121001") === result
     end
 
-    test "parses invalid NIP" do
+    test "parse invalid NIP" do
       assert Pns.parse("20001231202412100") === {:error, "Invalid length"}
+      assert Pns.parse("200013312024121001") === {:error, :invalid_date}
+      assert Pns.parse("200012312024123001") === {:error, "Invalid sex number code"}
     end
   end
 
@@ -32,6 +34,8 @@ defmodule Nip.PnsTest do
 
     test "invalid NIP" do
       assert Pns.validate_format("20001231202412100") === {:error, "Invalid length"}
+      assert Pns.validate_format("200013312024121001") === {:error, :invalid_date}
+      assert Pns.validate_format("200012312024123001") === {:error, "Invalid sex number code"}
     end
   end
 end

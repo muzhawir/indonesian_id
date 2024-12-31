@@ -7,20 +7,31 @@ defmodule IndonesianId.MixProject do
       version: "1.0.0",
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
+      description: description(),
+      package: package(),
       deps: deps(),
-
-      # Docs
-      name: "Indonesian_id",
+      name: "indonesian_id",
       source_url: "https://github.com/muzhawir/indonesian_id",
-      homepage_url: "https://github.com/muzhawir/indonesian_id",
+      homepage_url: "https://hex.pm/packages/indonesian_id",
       docs: &docs/0
+    ]
+  end
+
+  defp description do
+    "A package for parsing and validating Indonesian identification numbers."
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/muzhawir/indonesian_id"}
     ]
   end
 
   defp docs do
     [
       main: "readme",
-      # logo: "logo.png",
+      logo: "./priv/logo.svg",
       extras: ["README.md"]
     ]
   end

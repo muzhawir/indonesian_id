@@ -1,6 +1,12 @@
 defmodule Nip.Pns do
   @moduledoc """
   Functions for working with NIP PNS (Nomor Induk Pegawai Negeri Sipil)
+
+  NIP PNS consists of 18 digits that divided into 4 parts:
+  - `8` digits for birth date (`YYYYMMDD`)
+  - `6` digits for TMT (Tanggal Mulai Tugas) (`YYYYMM`)
+  - `1` digit for sex code (`1` for male and `2` for female)
+  - `3` digits for serial number (`001-999`)
   """
 
   import Nip.Utils
@@ -10,62 +16,44 @@ defmodule Nip.Pns do
   @doc """
   Parse NIP PNS into a struct.
 
+  This function returns `{:ok, %Nip.Pns{}}` if the NIP is valid, otherwise `{:error, reason}`.
+
   ## Examples
 
       iex> Nip.Pns.parse("200012312024121001")
       {:ok,
-         %Pns{
-           nip: "200012312024121001",
-           birth_date: "2000-12-31",
-           tmt_date: "2024-12-01",
-           sex: "M",
-           serial_number: "001"
-         }}
+      %Nip.Pns{
+        nip: "200012312024121001",
+        birth_date: ~D[2000-12-31],
+        tmt_date: ~D[2024-12-01],
+        sex: "M",
+        serial_number: "001"
+      }}
 
   """
   @spec parse(String.t()) :: {:ok, struct()} | {:error, String.t()}
   def parse(nip) when is_binary(nip) do
-    case validate_format(nip) do
-      {:ok, _} ->
-        {_, birth_date} = get_birth_date(nip)
-
-        {_, tmt_date} = get_tmt(nip)
-
-        {_, sex_code} = get_sex_code(nip)
-
-        {_, serial_number} = get_serial_number(nip)
-
-        {:ok,
-         %Nip.Pns{
-           nip: nip,
-           birth_date: Date.to_string(birth_date),
-           tmt_date: Date.to_string(tmt_date),
-           sex: sex_code,
-           serial_number: serial_number
-         }}
-
-      {:error, reason} ->
-        {:error, reason}
+    with {:ok, _} <- validate_length(nip),
+         {:ok, birth_date} <- get_birth_date(nip),
+         {:ok, tmt_date} <- get_tmt(nip),
+         {:ok, sex_code} <- get_sex_code(nip),
+         {:ok, serial_number} <- get_serial_number(nip) do
+      {:ok,
+       %Nip.Pns{
+         nip: nip,
+         birth_date: birth_date,
+         tmt_date: tmt_date,
+         sex: sex_code,
+         serial_number: serial_number
+       }}
     end
   end
 
-  @doc """
-  Get TMT (Tanggal Mulai Tugas) from NIP.
-
-  ## Exammples
-
-      iex> Nip.Pns.get_tmt("200012312024121001")
-      {:ok, ~D[2024-12-01]}
-
-  """
   @spec get_tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
-  def get_tmt(nip) when is_binary(nip) do
+  defp get_tmt(nip) when is_binary(nip) do
     tmt_date_from_nip = String.slice(nip, 8..13)
-
     year = String.slice(tmt_date_from_nip, 0..3)
-
     month = String.slice(tmt_date_from_nip, 4..5)
-
     parses_date = Date.from_iso8601("#{year}-#{month}-01")
 
     case parses_date do
@@ -76,6 +64,8 @@ defmodule Nip.Pns do
 
   @doc """
   Validate NIP format.
+
+  This function returns `{:ok, nip}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 

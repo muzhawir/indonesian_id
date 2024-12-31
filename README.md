@@ -1,13 +1,13 @@
-# indonesian_id
+# Indonesian ID
 
-An Elixir package for parsing and validating various Indonesian Identification Numbers.
-It provides utility functions to parse, validate, and extract information from these identification
-numbers.
+A package for parsing and validating Indonesian identification numbers. This library provides
+functions to ensure the format and validity of these IDs, making it easier to handle Indonesian
+identification numbers in your Elixir applications.
 
 ## Installation
 
-[Available in Hex](https://hex.pm/docs/publish), the package can be installed by adding
-`indonesian_id` to your list of dependencies in `mix.exs`:
+The package is [available in Hex](https://hex.pm/packages/indonesian_id) and can be installed
+by adding `indonesian_id` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
