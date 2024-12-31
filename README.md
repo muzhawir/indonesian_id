@@ -1,8 +1,7 @@
 # indonesian_id
 
-An Elixir package for parsing and validating various Indonesian Identification Numbers.
-It provides utility functions to parse, validate, and extract information from these identification
-numbers.
+Package for parsing and validating various Indonesian Identification Numbers.
+It provides utility functions to parse and validate from these identification numbers.
 
 ## Installation
 

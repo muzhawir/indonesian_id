@@ -16,7 +16,7 @@ defmodule Nip.Pns do
   @doc """
   Parse NIP PNS into a struct.
 
-  This function returns {:ok, %Nip.Pns{}} if the NIP is valid, otherwise {:error, reason}.
+  This function returns `{:ok, %Nip.Pns{}}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 
@@ -65,7 +65,7 @@ defmodule Nip.Pns do
   @doc """
   Validate NIP format.
 
-  This function returns {:ok, nip} if the NIP is valid, otherwise {:error, reason}.
+  This function returns `{:ok, nip}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 

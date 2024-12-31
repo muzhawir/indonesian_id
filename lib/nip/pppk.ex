@@ -18,7 +18,7 @@ defmodule Nip.Pppk do
   @doc """
   Parse NIP PPPK into a struct.
 
-  This function returns {:ok, %Nip.Pppk{}} if the NIP is valid, otherwise {:error, reason}.
+  This function returns `{:ok, %Nip.Pppk{}}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 
@@ -79,6 +79,8 @@ defmodule Nip.Pppk do
 
   @doc """
   Validate NIP format.
+
+  This function returns `{:ok, nip}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 
