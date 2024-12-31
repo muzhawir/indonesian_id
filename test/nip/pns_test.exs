@@ -34,6 +34,8 @@ defmodule Nip.PnsTest do
 
     test "invalid NIP" do
       assert Pns.validate_format("20001231202412100") === {:error, "Invalid length"}
+      assert Pns.validate_format("200013312024121001") === {:error, :invalid_date}
+      assert Pns.validate_format("200012312024123001") === {:error, "Invalid sex number code"}
     end
   end
 end
