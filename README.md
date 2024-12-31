@@ -6,8 +6,8 @@ identification numbers in your Elixir applications.
 
 ## Installation
 
-The package is [available in Hex](https://hex.pm/docs/publish) and can be installed by adding
-`indonesian_id` to your list of dependencies in `mix.exs`:
+The package is [available in Hex](https://hex.pm/packages/indonesian_id) and can be installed
+by adding `indonesian_id` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
