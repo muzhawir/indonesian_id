@@ -22,19 +22,43 @@ defmodule Nik do
     :serial_number
   ]
 
-  @spec parse(String.t()) :: %__MODULE__{}
+  @doc """
+  Parse NIK into a struct.
+
+  Returns `{:ok, %Nik{}}` if the NIK is valid, otherwise `{:error, reason}`.
+
+  ## Examples
+
+      iex> Nik.parse("7210142507971234")
+      {:ok,
+      %Nik{
+        id: "7210142507971234",
+        area: %{
+          province: %{code: "72", name: "Sulawesi Tengah"},
+          city: %{code: "10", name: "Sigi"},
+          subdistrict: %{code: "14", name: "Marawola"}
+        },
+        birth_date: ~D[1997-07-25],
+        sex: "M",
+        serial_number: "1234"
+      }}
+
+  """
+
+  @spec parse(String.t()) :: {:ok | :error, %__MODULE__{}}
   def parse(nik) when is_binary(nik) do
     with {:ok, _} <- Utils.validate_length(nik),
          {:ok, birth_date} <- Utils.birth_date(nik),
          {:ok, sex} <- Utils.sex_code(nik),
          {:ok, serial_number} <- Utils.serial_number(nik) do
-      %Nik{
-        id: nik,
-        area: Utils.area_code(nik),
-        birth_date: birth_date,
-        sex: sex,
-        serial_number: serial_number
-      }
+      {:ok,
+       %Nik{
+         id: nik,
+         area: Utils.area_code(nik),
+         birth_date: birth_date,
+         sex: sex,
+         serial_number: serial_number
+       }}
     end
   end
 end
