@@ -37,12 +37,12 @@ defmodule Nip.Pppk do
   @spec parse(String.t()) :: {:ok, struct()} | {:error, String.t()}
   def parse(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
-         {:ok, birth_date} <- get_birth_date(nip),
-         {:ok, tmt_date} <- get_tmt(nip),
+         {:ok, birth_date} <- birth_date(nip),
+         {:ok, tmt_date} <- tmt(nip),
          {:ok, _} <- validate_pppk_code(nip),
-         {:ok, frequency} <- get_frequency(nip),
-         {:ok, sex_code} <- get_sex_code(nip),
-         {:ok, serial_number} <- get_serial_number(nip) do
+         {:ok, frequency} <- frequency(nip),
+         {:ok, sex_code} <- sex_code(nip),
+         {:ok, serial_number} <- serial_number(nip) do
       {:ok,
        %Nip.Pppk{
          nip: nip,
@@ -55,8 +55,8 @@ defmodule Nip.Pppk do
     end
   end
 
-  @spec get_tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
-  defp get_tmt(nip) when is_binary(nip) do
+  @spec tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
+  defp tmt(nip) when is_binary(nip) do
     year = nip |> String.slice(8..11) |> String.slice(0..3)
     parses_date = Date.from_iso8601("#{year}-01-01")
 
@@ -71,8 +71,8 @@ defmodule Nip.Pppk do
     if String.slice(nip, 12..12) === "2", do: {:ok, "Valid"}, else: {:error, "Invalid PPPK code"}
   end
 
-  @spec get_frequency(String.t()) :: {:ok, non_neg_integer()} | {:error, String.t()}
-  defp get_frequency(nip) when is_binary(nip) do
+  @spec frequency(String.t()) :: {:ok, non_neg_integer()} | {:error, String.t()}
+  defp frequency(nip) when is_binary(nip) do
     frequency = nip |> String.at(13) |> String.to_integer()
     if frequency in 1..9, do: {:ok, frequency}, else: {:error, "frequency out of range"}
   end
@@ -91,12 +91,12 @@ defmodule Nip.Pppk do
   @spec validate_format(String.t()) :: {:ok | :error, String.t()}
   def validate_format(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
-         {:ok, _} <- get_birth_date(nip),
-         {:ok, _} <- get_tmt(nip),
+         {:ok, _} <- birth_date(nip),
+         {:ok, _} <- tmt(nip),
          {:ok, _} <- validate_pppk_code(nip),
-         {:ok, _} <- get_frequency(nip),
-         {:ok, _} <- get_sex_code(nip),
-         {:ok, _} <- get_serial_number(nip) do
+         {:ok, _} <- frequency(nip),
+         {:ok, _} <- sex_code(nip),
+         {:ok, _} <- serial_number(nip) do
       {:ok, nip}
     end
   end
