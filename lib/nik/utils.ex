@@ -22,14 +22,14 @@ defmodule Nik.Utils do
   defp province_code(nik) do
     _provice_code = String.slice(nik, 0..1)
 
-    %{code: "72", name: "Sulawesi Tengah"}
+    Regional.province(_provice_code)
   end
 
   defp city_code(nik) do
     _province_code = province_code(nik)
     _city_code = String.slice(nik, 2..3)
 
-    %{code: "10", name: "Sigi"}
+    Regional.city(_province_code, _city_code)
   end
 
   defp subdistrict_code(nik) do
@@ -37,7 +37,7 @@ defmodule Nik.Utils do
     _city_code = city_code(nik)
     _subdistrict_code = String.slice(nik, 4..5)
 
-    %{code: "14", name: "Marawola"}
+    Regional.subdistrict(_provice_code, _city_code, _subdistrict_code)
   end
 
   @spec birth_date(String.t()) :: {:ok | :error, Date.t()}
