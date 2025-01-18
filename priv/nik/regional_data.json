@@ -122,7 +122,174 @@
   },
   "12": {
     "code": "12",
-    "name": "Sumatera Utara"
+    "name": "Sumatera Utara",
+    "city": {
+      "01": {
+        "code": "01",
+        "type": "Kabupaten",
+        "name": "Tapanuli Tengah"
+      },
+      "02": {
+        "code": "02",
+        "type": "Kabupaten",
+        "name": "Tapanuli Utara"
+      },
+      "03": {
+        "code": "03",
+        "type": "Kabupaten",
+        "name": "Tapanuli Selatan"
+      },
+      "04": {
+        "code": "04",
+        "type": "Kabupaten",
+        "name": "Nias"
+      },
+      "05": {
+        "code": "05",
+        "type": "Kabupaten",
+        "name": "Langkat"
+      },
+      "06": {
+        "code": "06",
+        "type": "Kabupaten",
+        "name": "Karo"
+      },
+      "07": {
+        "code": "07",
+        "type": "Kabupaten",
+        "name": "Deli Serdang"
+      },
+      "08": {
+        "code": "08",
+        "type": "Kabupaten",
+        "name": "Simalungun"
+      },
+      "09": {
+        "code": "09",
+        "type": "Kabupaten",
+        "name": "Asahan"
+      },
+      "10": {
+        "code": "10",
+        "type": "Kabupaten",
+        "name": "Labuhanbatu"
+      },
+      "11": {
+        "code": "11",
+        "type": "Kabupaten",
+        "name": "Dairi"
+      },
+      "12": {
+        "code": "12",
+        "type": "Kabupaten",
+        "name": "Toba Samosir"
+      },
+      "13": {
+        "code": "13",
+        "type": "Kabupaten",
+        "name": "Mandailing Natal"
+      },
+      "14": {
+        "code": "14",
+        "type": "Kabupaten",
+        "name": "Nias Selatan"
+      },
+      "15": {
+        "code": "15",
+        "type": "Kabupaten",
+        "name": "Pakpak Bharat"
+      },
+      "16": {
+        "code": "16",
+        "type": "Kabupaten",
+        "name": "Humbang Hasundutan"
+      },
+      "17": {
+        "code": "17",
+        "type": "Kabupaten",
+        "name": "Samosir"
+      },
+      "18": {
+        "code": "18",
+        "type": "Kabupaten",
+        "name": "Serdang Bedagai"
+      },
+      "19": {
+        "code": "19",
+        "type": "Kabupaten",
+        "name": "Batu Bara"
+      },
+      "20": {
+        "code": "20",
+        "type": "Kabupaten",
+        "name": "Padang Lawas Utara"
+      },
+      "21": {
+        "code": "21",
+        "type": "Kabupaten",
+        "name": "Padang Lawas"
+      },
+      "22": {
+        "code": "22",
+        "type": "Kabupaten",
+        "name": "Labuhanbatu Selatan"
+      },
+      "23": {
+        "code": "23",
+        "type": "Kabupaten",
+        "name": "Labuhanbatu Utara"
+      },
+      "24": {
+        "code": "24",
+        "type": "Kabupaten",
+        "name": "Nias Utara"
+      },
+      "25": {
+        "code": "25",
+        "type": "Kabupaten",
+        "name": "Nias Barat"
+      },
+      "71": {
+        "code": "71",
+        "type": "Kota",
+        "name": "Medan"
+      },
+      "72": {
+        "code": "72",
+        "type": "Kota",
+        "name": "Pematangsiantar"
+      },
+      "73": {
+        "code": "73",
+        "type": "Kota",
+        "name": "Sibolga"
+      },
+      "74": {
+        "code": "74",
+        "type": "Kota",
+        "name": "Tanjung Balai"
+      },
+      "75": {
+        "code": "75",
+        "type": "Kota",
+        "name": "Binjai"
+      },
+      "76": {
+        "code": "76",
+        "type": "Kota",
+        "name": "Tebing Tinggi"
+      },
+      "77": {
+        "code": "77",
+        "type": "Kota",
+        "name": "Padang Sidempuan"
+      },
+      "78": {
+        "code": "78",
+        "type": "Kota",
+        "name": "Gunungsitoli"
+      }
+    }
   },
   "13": {
     "code": "13",
