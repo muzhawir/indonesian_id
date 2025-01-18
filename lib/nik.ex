@@ -27,16 +27,22 @@ defmodule Nik do
 
   Returns `{:ok, %Nik{}}` if the NIK is valid, otherwise `{:error, reason}`.
   """
-  @spec parse(String.t()) :: {:ok | :error, %__MODULE__{}}
   def parse(nik) when is_binary(nik) do
     with {:ok, _} <- Utils.validate_length(nik),
+         {:ok, province} <- Utils.province_code(nik),
+         {:ok, city} <- Utils.city_code(nik),
+         {:ok, district} <- Utils.district_code(nik),
          {:ok, birth_date} <- Utils.birth_date(nik),
          {:ok, sex} <- Utils.sex_code(nik),
          {:ok, serial_number} <- Utils.serial_number(nik) do
       {:ok,
        %Nik{
          id: nik,
-         area: Utils.area_code(nik),
+         area: %{
+           province: province,
+           city: city,
+           district: district
+         },
          birth_date: birth_date,
          sex: sex,
          serial_number: serial_number
