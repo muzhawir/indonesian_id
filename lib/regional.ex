@@ -6,7 +6,7 @@ defmodule Regional do
   import Regional.Guard
   import Regional.Utils
 
-  @type result() :: {:ok | map()} | {:error, String.t()}
+  @type result() :: {:ok, map()} | {:error, String.t()}
 
   @regional_data Regional.Data.regional_data!()
 
