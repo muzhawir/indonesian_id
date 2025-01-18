@@ -1,7 +1,124 @@
 {
   "11": {
     "code": "11",
-    "name": "Aceh"
+    "name": "Aceh",
+    "city": {
+      "01": {
+        "code": "01",
+        "type": "Kabupaten",
+        "name": "Aceh Selatan"
+      },
+      "02": {
+        "code": "02",
+        "type": "Kabupaten",
+        "name": "Aceh Tenggara"
+      },
+      "03": {
+        "code": "03",
+        "type": "Kabupaten",
+        "name": "Aceh Timur"
+      },
+      "04": {
+        "code": "04",
+        "type": "Kabupaten",
+        "name": "Aceh Tengah"
+      },
+      "05": {
+        "code": "05",
+        "type": "Kabupaten",
+        "name": "Aceh Barat"
+      },
+      "06": {
+        "code": "06",
+        "type": "Kabupaten",
+        "name": "Aceh Besar"
+      },
+      "07": {
+        "code": "07",
+        "type": "Kabupaten",
+        "name": "Pidie"
+      },
+      "08": {
+        "code": "08",
+        "type": "Kabupaten",
+        "name": "Aceh Utara"
+      },
+      "09": {
+        "code": "09",
+        "type": "Kabupaten",
+        "name": "Simeulue"
+      },
+      "10": {
+        "code": "10",
+        "type": "Kabupaten",
+        "name": "Aceh Singkil"
+      },
+      "11": {
+        "code": "11",
+        "type": "Kabupaten",
+        "name": "Bireuen"
+      },
+      "12": {
+        "code": "12",
+        "type": "Kabupaten",
+        "name": "Aceh Barat Daya"
+      },
+      "13": {
+        "code": "13",
+        "type": "Kabupaten",
+        "name": "Gayo Lues"
+      },
+      "14": {
+        "code": "14",
+        "type": "Kabupaten",
+        "name": "Aceh Jaya"
+      },
+      "15": {
+        "code": "15",
+        "type": "Kabupaten",
+        "name": "Nagan Raya"
+      },
+      "16": {
+        "code": "16",
+        "type": "Kabupaten",
+        "name": "Aceh Tamiang"
+      },
+      "17": {
+        "code": "17",
+        "type": "Kabupaten",
+        "name": "Bener Meriah"
+      },
+      "18": {
+        "code": "18",
+        "type": "Kabupaten",
+        "name": "Pidie Jaya"
+      },
+      "71": {
+        "code": "71",
+        "type": "Kota",
+        "name": "Banda Aceh"
+      },
+      "72": {
+        "code": "72",
+        "type": "Kota",
+        "name": "Sabang"
+      },
+      "73": {
+        "code": "73",
+        "type": "Kota",
+        "name": "Lhokseumawe"
+      },
+      "74": {
+        "code": "74",
+        "type": "Kota",
+        "name": "Langsa"
+      },
+      "75": {
+        "code": "75",
+        "type": "Kota",
+        "name": "Subulussalam"
+      }
+    }
   },
   "12": {
     "code": "12",
