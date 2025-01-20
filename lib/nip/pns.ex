@@ -16,7 +16,7 @@ defmodule Nip.Pns do
   @doc """
   Parse NIP PNS into a struct.
 
-  This function returns `{:ok, %Nip.Pns{}}` if the NIP is valid, otherwise `{:error, reason}`.
+  Returns `{:ok, %Nip.Pns{}}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 
@@ -34,10 +34,10 @@ defmodule Nip.Pns do
   @spec parse(String.t()) :: {:ok, struct()} | {:error, String.t()}
   def parse(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
-         {:ok, birth_date} <- get_birth_date(nip),
-         {:ok, tmt_date} <- get_tmt(nip),
-         {:ok, sex_code} <- get_sex_code(nip),
-         {:ok, serial_number} <- get_serial_number(nip) do
+         {:ok, birth_date} <- birth_date(nip),
+         {:ok, tmt_date} <- tmt(nip),
+         {:ok, sex_code} <- sex_code(nip),
+         {:ok, serial_number} <- serial_number(nip) do
       {:ok,
        %Nip.Pns{
          nip: nip,
@@ -49,8 +49,8 @@ defmodule Nip.Pns do
     end
   end
 
-  @spec get_tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
-  defp get_tmt(nip) when is_binary(nip) do
+  @spec tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
+  defp tmt(nip) when is_binary(nip) do
     tmt_date_from_nip = String.slice(nip, 8..13)
     year = String.slice(tmt_date_from_nip, 0..3)
     month = String.slice(tmt_date_from_nip, 4..5)
@@ -65,7 +65,7 @@ defmodule Nip.Pns do
   @doc """
   Validate NIP format.
 
-  This function returns `{:ok, nip}` if the NIP is valid, otherwise `{:error, reason}`.
+  Returns `{:ok, nip}` if the NIP is valid, otherwise `{:error, reason}`.
 
   ## Examples
 
@@ -76,10 +76,10 @@ defmodule Nip.Pns do
   @spec validate_format(String.t()) :: {:ok | :error, String.t()}
   def validate_format(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
-         {:ok, _} <- get_birth_date(nip),
-         {:ok, _} <- get_tmt(nip),
-         {:ok, _} <- get_sex_code(nip),
-         {:ok, _} <- get_serial_number(nip) do
+         {:ok, _} <- birth_date(nip),
+         {:ok, _} <- tmt(nip),
+         {:ok, _} <- sex_code(nip),
+         {:ok, _} <- serial_number(nip) do
       {:ok, nip}
     end
   end
