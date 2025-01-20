@@ -6,117 +6,1608 @@
       "01": {
         "code": "01",
         "type": "Kabupaten",
-        "name": "Aceh Selatan"
+        "name": "Aceh Selatan",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Bakongan"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Kluet Utara"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Kluet Selatan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Labuhan Haji"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Meukek"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Samadua"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Sawang"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Tapaktuan"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Trumon"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Pasi Raja"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Labuhan Haji Timur"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Labuhan Haji Barat"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Kluet Tengah"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Kluet Timur"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Bakongan Timur"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Trumon Timur"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Kota Bahagia"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Trumon Tengah"
+          }
+        }
       },
       "02": {
         "code": "02",
         "type": "Kabupaten",
-        "name": "Aceh Tenggara"
+        "name": "Aceh Tenggara",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lawe Alas"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Lawe Sigala-Gala"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Bambel"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Babussalam"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Badar"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Babul Makmur"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Darul Hasanah"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Lawe Bulan"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Bukit Tusam"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Semadam"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Babul Rahmah"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Ketambe"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Deleng Pokhkisen"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Lawe Sumur"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Tanoh Alas"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Leuser"
+          }
+        }
       },
       "03": {
         "code": "03",
         "type": "Kabupaten",
-        "name": "Aceh Timur"
+        "name": "Aceh Timur",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Darul Aman"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Julok"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Idi Rayeuk"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Birem Bayeun"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Serbajadi"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Nurussalam"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Peureulak"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Rantau Selamat"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Simpang Ulim"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Rantau Peureulak"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Pante Bidari"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Madat"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Indra Makmu"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Idi Tunong"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Banda Alam"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Peudawa"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Peureulak Timur"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Peureulak Barat"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Sungai Raya"
+          },
+          "20": {
+            "code": "20",
+            "type": "Kecamatan",
+            "name": "Simpang Jernih"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Darul Ihsan"
+          },
+          "22": {
+            "code": "22",
+            "type": "Kecamatan",
+            "name": "Darul Falah"
+          },
+          "23": {
+            "code": "23",
+            "type": "Kecamatan",
+            "name": "Idi Timur"
+          },
+          "24": {
+            "code": "24",
+            "type": "Kecamatan",
+            "name": "Peunaron"
+          }
+        }
       },
       "04": {
         "code": "04",
         "type": "Kabupaten",
-        "name": "Aceh Tengah"
+        "name": "Aceh Tengah",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Linge"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Silih Nara"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Bebesen"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Pegasing"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Bintang"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Ketol"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Kebayakan"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Kute Panang"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Celala"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Laut Tawar"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Atu Lintang"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Jagong Jeget"
+          },
+          "20": {
+            "code": "20",
+            "type": "Kecamatan",
+            "name": "Bies"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Rusip Antara"
+          }
+        }
       },
       "05": {
         "code": "05",
         "type": "Kabupaten",
-        "name": "Aceh Barat"
+        "name": "Aceh Barat",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Johan Pahwalan"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Kaway XVI"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Sungai Mas"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Woyla"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Samatiga"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Bubon"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Arongan Lambalek"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Pante Ceureumen"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Meureubo"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Woyla Barat"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Woyla Timur"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Panton Reu"
+          }
+        }
       },
       "06": {
         "code": "06",
         "type": "Kabupaten",
-        "name": "Aceh Besar"
+        "name": "Aceh Besar",
+        "disctrict": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lhoong"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Lhoknga"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Indrapuri"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Seulimeum"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Montasik"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Sukamakmur"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Darul Imarah"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Peukan Bada"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Mesjid Raya"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Ingin Jaya"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Kuta Baro"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Darussalam"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Pulo Aceh"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Lembah Seulawah"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Kota Jantho"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Kota Cot Glie"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Kuta Malaka"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Simpang Tiga"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Darul Kamal"
+          },
+          "20": {
+            "code": "20",
+            "type": "Kecamatan",
+            "name": "Baitussalam"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Krueng Barona Jaya"
+          },
+          "22": {
+            "code": "22",
+            "type": "Kecamatan",
+            "name": "Leupung"
+          },
+          "23": {
+            "code": "23",
+            "type": "Kecamatan",
+            "name": "Blang Bintang"
+          }
+        }
       },
       "07": {
         "code": "07",
         "type": "Kabupaten",
-        "name": "Pidie"
+        "name": "Pidie",
+        "disctrict": {
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Batee"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Delima"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Geumpang"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Geulumpang Tiga"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Indra Jaya"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Kembang Tanjong"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Kota Sigli"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Mila"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Muara Tiga"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Mutiara"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Padang Tiji"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Peukan Baro"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Pidie"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Sakti"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Simpang Tiga"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Tangse"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Tiro/Truseb"
+          },
+          "22": {
+            "code": "22",
+            "type": "Kecamatan",
+            "name": "Keumala"
+          },
+          "24": {
+            "code": "24",
+            "type": "Kecamatan",
+            "name": "Mutiara Timur"
+          },
+          "25": {
+            "code": "25",
+            "type": "Kecamatan",
+            "name": "Grong-grong"
+          },
+          "27": {
+            "code": "27",
+            "type": "Kecamatan",
+            "name": "Mane"
+          },
+          "29": {
+            "code": "29",
+            "type": "Kecamatan",
+            "name": "Glumpang Baro"
+          },
+          "31": {
+            "code": "31",
+            "type": "Kecamatan",
+            "name": "Titeue"
+          }
+        }
       },
       "08": {
         "code": "08",
         "type": "Kabupaten",
-        "name": "Aceh Utara"
+        "name": "Aceh Utara",
+        "disctrict": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Baktiya"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Dewantara"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Kuta Makmur"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Lhoksukon"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Matangkuli"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Muara Batu"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Meurah Mulia"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Samudera"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Seunuddon"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Syamtalira Aron"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Syamtalira Bayu"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Tanah Luas"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Tanah Pasir"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "T. Jambo Aye"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Sawang"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Nisam"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Cot Girek"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Langkahan"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Baktiya Barat"
+          },
+          "20": {
+            "code": "20",
+            "type": "Kecamatan",
+            "name": "Paya Bakong"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Nibong"
+          },
+          "22": {
+            "code": "22",
+            "type": "Kecamatan",
+            "name": "Simpang Kramat"
+          },
+          "23": {
+            "code": "23",
+            "type": "Kecamatan",
+            "name": "Lapang"
+          },
+          "24": {
+            "code": "24",
+            "type": "Kecamatan",
+            "name": "Pirak Timur"
+          },
+          "25": {
+            "code": "25",
+            "type": "Kecamatan",
+            "name": "Geuredong Pase"
+          },
+          "26": {
+            "code": "26",
+            "type": "Kecamatan",
+            "name": "Banda Baro"
+          },
+          "27": {
+            "code": "27",
+            "type": "Kecamatan",
+            "name": "Nisam Antara"
+          }
+        }
       },
       "09": {
         "code": "09",
         "type": "Kabupaten",
-        "name": "Simeulue"
+        "name": "Simeulue",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Simeulue Tengah"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Salang"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Teupah Barat"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Simeulue Timur"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Teluk Dalam"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Simeulue Barat"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Teupah Selatan"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Alapan"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Teupah Tengah"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Simeulue Cut"
+          }
+        }
       },
       "10": {
         "code": "10",
         "type": "Kabupaten",
-        "name": "Aceh Singkil"
+        "name": "Aceh Singkil",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Pulau Banyak"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Simpang Kanan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Singkil"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Gunung Meriah"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Kota Baharu"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Singkil Utara"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Danau Paris"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Suro Makmur"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Singkohor"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Kuala Baru"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Pulau Banyak Barat"
+          }
+        }
       },
       "11": {
         "code": "11",
         "type": "Kabupaten",
-        "name": "Bireuen"
+        "name": "Bireuen",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Samalanga"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Jeunieb"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Peudada"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Jeumpa"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Peusangan"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Makmur"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Gandapura"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Pandrah"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Juli"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Jangka"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Simpang Mamplam"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Peulimbang"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Kota Juang"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Kuala"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Peusangan Siblah Krueng"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Peusangan Selatan"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Kuta Blang"
+          }
+        }
       },
       "12": {
         "code": "12",
         "type": "Kabupaten",
-        "name": "Aceh Barat Daya"
+        "name": "Aceh Barat Daya",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Blang Pidie"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Tangan-Tangan"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Manggeng"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Susoh"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kuala Batee"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Babah Rot"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Setia"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Jeumpa"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Lembah Sabil"
+          }
+        }
       },
       "13": {
         "code": "13",
         "type": "Kabupaten",
-        "name": "Gayo Lues"
+        "name": "Gayo Lues",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Blangkejeren"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Kutapanjang"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Rikit Gaib"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Terangun"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Pining"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Blangpegayon"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Puteri Betung"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Dabun Gelang"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Blangjerango"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Teripe Jaya"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Pantan Cuaca"
+          }
+        }
       },
       "14": {
         "code": "14",
         "type": "Kabupaten",
-        "name": "Aceh Jaya"
+        "name": "Aceh Jaya",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Teunom"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Krueng Sabee"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Setia Bhakti"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Sampoiniet"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Jaya"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Panga"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Indra Jaya"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Darul Hikmah"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Pasie Raya"
+          }
+        }
       },
       "15": {
         "code": "15",
         "type": "Kabupaten",
-        "name": "Nagan Raya"
+        "name": "Nagan Raya",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Kuala"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Seunagan"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Seunagan Timur"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Beutong"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Darul Makmur"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Suka Makmue"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Kuala Pesisir"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Tadu Raya"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Tripa Makmur"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Beutong Ateuh Banggalang"
+          }
+        }
       },
       "16": {
         "code": "16",
         "type": "Kabupaten",
-        "name": "Aceh Tamiang"
+        "name": "Aceh Tamiang",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Manyak Payed"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Bendahara"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Karang Baru"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Seruway"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kota Kualasinpang"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kejuruan Muda"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Tamiang Hulu"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Rantau"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Banda Mulia"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Bandar Pusaka"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Tenggulun"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Sekerak"
+          }
+        }
       },
       "17": {
         "code": "17",
         "type": "Kabupaten",
-        "name": "Bener Meriah"
+        "name": "Bener Meriah",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Pintu Rime Gayo"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Permata"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Syiah Utama"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Bandar"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Bukit"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Wih Pesam"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Timang Gajah"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Bener Kelipah"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Mesidah"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Gajah Putih"
+          }
+        }
       },
       "18": {
         "code": "18",
         "type": "Kabupaten",
-        "name": "Pidie Jaya"
+        "name": "Pidie Jaya",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Meureudu"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Ulim"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Jangka Buaya"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Bandar Dua"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Meurah Dua"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Bandar Baru"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Panteraja"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Trienggadeng"
+          }
+        }
       },
       "71": {
         "code": "71",
         "type": "Kota",
-        "name": "Banda Aceh"
+        "name": "Banda Aceh",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Baiturrahman"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Kuta Alam"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Meuraxa"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Syiah Kuala"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Lueng Bata"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kuta Raja"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Banda Raya"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Jaya Baru"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Ulee Kareng"
+          }
+        }
       },
       "72": {
         "code": "72",
         "type": "Kota",
-        "name": "Sabang"
+        "name": "Sabang",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Sukakarya"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Sukajaya"
+          }
+        }
       },
       "73": {
         "code": "73",
         "type": "Kota",
-        "name": "Lhokseumawe"
+        "name": "Lhokseumawe",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Muara Dua"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Banda Sakti"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Blang Mangat"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Muara Satu"
+          }
+        }
       },
       "74": {
         "code": "74",
         "type": "Kota",
-        "name": "Langsa"
+        "name": "Langsa",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Langsa Timur"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Langsa Barat"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Langsa Kota"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Langsa Lama"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Langsa Baro"
+          }
+        }
       },
       "75": {
         "code": "75",
         "type": "Kota",
-        "name": "Subulussalam"
+        "name": "Subulussalam",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Simpang Kiri"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Penanggalan"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Rundeng"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Sultan Daulat"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Longkib"
+          }
+        }
       }
     }
   },
