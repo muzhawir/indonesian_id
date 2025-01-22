@@ -1,7 +1,7 @@
 defmodule Regional.Utils do
   @moduledoc false
 
-  @type data :: map() | nil
+  @type regional_data :: map() | nil
   @type result :: {:error, String.t()} | {:ok, map()}
 
   @doc """
@@ -9,7 +9,7 @@ defmodule Regional.Utils do
 
   Returns `{:ok, data}` if the data is found; otherwise, returns `{:error, "Data not found"}`.
   """
-  @spec search_code(data(), atom()) :: result()
+  @spec search_code(regional_data(), atom()) :: result()
   def search_code(nil, _), do: {:error, "Data not found"}
   def search_code(data, type), do: {:ok, extract_data(data, type)}
 
