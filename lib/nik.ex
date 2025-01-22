@@ -14,6 +14,15 @@ defmodule Nik do
 
   alias Nik.Utils
 
+  @type result() :: {:ok, t()} | {:error, String.t()}
+  @type t :: %__MODULE__{
+          id: String.t(),
+          area: map(),
+          birth_date: Date.t(),
+          sex: String.t(),
+          serial_number: String.t()
+        }
+
   defstruct [
     :id,
     :area,
@@ -44,6 +53,7 @@ defmodule Nik do
       }}
 
   """
+  @spec parse(String.t()) :: result()
   def parse(nik) when is_binary(nik) do
     with {:ok, _} <- Utils.validate_length(nik),
          {:ok, province} <- Utils.province_code(nik),
