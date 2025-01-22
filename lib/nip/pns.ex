@@ -2,6 +2,7 @@ defmodule Nip.Pns do
   @moduledoc """
   Functions for working with NIP PNS (Nomor Induk Pegawai Negeri Sipil)
 
+  NIP PNS consists of 18 digits divided into 4 parts:
   NIP PNS consists of 18 digits that divided into 4 parts:
   - `8` digits for birth date (`YYYYMMDD`)
   - `6` digits for TMT (Tanggal Mulai Tugas) (`YYYYMM`)
@@ -11,11 +12,7 @@ defmodule Nip.Pns do
 
   import Nip.Utils
 
-  defstruct [:nip, :birth_date, :tmt_date, :sex, :serial_number]
-
-  @typedoc """
-  NIP PNS Struct
-  """
+  @type nip_result() :: {:ok, t()} | {:error, String.t()}
   @type t :: %__MODULE__{
           nip: String.t(),
           birth_date: Date.t(),
@@ -23,6 +20,9 @@ defmodule Nip.Pns do
           sex: String.t(),
           serial_number: String.t()
         }
+  @type date_result() :: {:ok, Date.t()} | {:error, String.t()}
+
+  defstruct [:nip, :birth_date, :tmt_date, :sex, :serial_number]
 
   @doc """
   Parse NIP PNS into a struct.
@@ -42,7 +42,7 @@ defmodule Nip.Pns do
       }}
 
   """
-  @spec parse(String.t()) :: {:ok, t()} | {:error, String.t()}
+  @spec parse(String.t()) :: nip_result()
   def parse(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
          {:ok, birth_date} <- birth_date(nip),
@@ -60,15 +60,12 @@ defmodule Nip.Pns do
     end
   end
 
-  @spec tmt_date(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
+  @spec tmt_date(String.t()) :: date_result()
   defp tmt_date(nip) when is_binary(nip) do
     year = String.slice(nip, 8..11)
     month = String.slice(nip, 12..13)
 
-    case Date.from_iso8601("#{year}-#{month}-01") do
-      {:ok, date} -> {:ok, date}
-      {:error, reason} -> {:error, reason}
-    end
+    Date.from_iso8601("#{year}-#{month}-01")
   end
 
   @doc """
