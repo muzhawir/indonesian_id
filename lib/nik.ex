@@ -15,7 +15,7 @@ defmodule Nik do
   alias Nik.Utils
 
   @type result() :: {:ok, t()} | {:error, String.t()}
-  @type t :: %__MODULE__{
+  @type t() :: %__MODULE__{
           id: String.t(),
           area: map(),
           birth_date: Date.t(),
