@@ -1,15 +1,15 @@
 defmodule Regional.Utils do
   @moduledoc false
 
-  @type data :: map() | nil
-  @type result :: {:error, String.t()} | {:ok, map()}
+  @type regional_data() :: map() | nil
+  @type regional_result() :: {:error, String.t()} | {:ok, map()}
 
   @doc """
   Searches regional data based on a series of code structures.
 
   Returns `{:ok, data}` if the data is found; otherwise, returns `{:error, "Data not found"}`.
   """
-  @spec search_code(data(), atom()) :: result()
+  @spec search_code(regional_data(), atom()) :: regional_result()
   def search_code(nil, _), do: {:error, "Data not found"}
   def search_code(data, type), do: {:ok, extract_data(data, type)}
 

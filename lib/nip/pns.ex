@@ -2,7 +2,7 @@ defmodule Nip.Pns do
   @moduledoc """
   Functions for working with NIP PNS (Nomor Induk Pegawai Negeri Sipil)
 
-  NIP PNS consists of 18 digits that divided into 4 parts:
+  NIP PNS consists of 18 digits divided into 4 parts:
   - `8` digits for birth date (`YYYYMMDD`)
   - `6` digits for TMT (Tanggal Mulai Tugas) (`YYYYMM`)
   - `1` digit for sex code (`1` for male and `2` for female)
@@ -10,6 +10,17 @@ defmodule Nip.Pns do
   """
 
   import Nip.Utils
+
+  @type nip_result() :: {:ok, t()} | {:error, String.t()}
+  @type t() :: %__MODULE__{
+          nip: String.t(),
+          birth_date: Date.t(),
+          tmt_date: Date.t(),
+          sex: String.t(),
+          serial_number: String.t()
+        }
+  @type validated_nip_result() :: {:ok, String.t()} | {:error, String.t()}
+  @typep date_result() :: {:ok, Date.t()} | {:error, atom()}
 
   defstruct [:nip, :birth_date, :tmt_date, :sex, :serial_number]
 
@@ -31,35 +42,30 @@ defmodule Nip.Pns do
       }}
 
   """
-  @spec parse(String.t()) :: {:ok, struct()} | {:error, String.t()}
+  @spec parse(String.t()) :: nip_result()
   def parse(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
          {:ok, birth_date} <- birth_date(nip),
-         {:ok, tmt_date} <- tmt(nip),
-         {:ok, sex_code} <- sex_code(nip),
+         {:ok, tmt_date} <- tmt_date(nip),
+         {:ok, sex} <- sex_code(nip),
          {:ok, serial_number} <- serial_number(nip) do
       {:ok,
        %Nip.Pns{
          nip: nip,
          birth_date: birth_date,
          tmt_date: tmt_date,
-         sex: sex_code,
+         sex: sex,
          serial_number: serial_number
        }}
     end
   end
 
-  @spec tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
-  defp tmt(nip) when is_binary(nip) do
-    tmt_date_from_nip = String.slice(nip, 8..13)
-    year = String.slice(tmt_date_from_nip, 0..3)
-    month = String.slice(tmt_date_from_nip, 4..5)
-    parses_date = Date.from_iso8601("#{year}-#{month}-01")
+  @spec tmt_date(String.t()) :: date_result()
+  defp tmt_date(nip) when is_binary(nip) do
+    year = String.slice(nip, 8..11)
+    month = String.slice(nip, 12..13)
 
-    case parses_date do
-      {:ok, date} -> {:ok, date}
-      {:error, reason} -> {:error, reason}
-    end
+    Date.from_iso8601("#{year}-#{month}-01")
   end
 
   @doc """
@@ -73,11 +79,11 @@ defmodule Nip.Pns do
       {:ok, "200012312024121001"}
 
   """
-  @spec validate_format(String.t()) :: {:ok | :error, String.t()}
+  @spec validate_format(String.t()) :: validated_nip_result()
   def validate_format(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
          {:ok, _} <- birth_date(nip),
-         {:ok, _} <- tmt(nip),
+         {:ok, _} <- tmt_date(nip),
          {:ok, _} <- sex_code(nip),
          {:ok, _} <- serial_number(nip) do
       {:ok, nip}

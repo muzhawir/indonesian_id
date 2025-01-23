@@ -3,7 +3,7 @@ defmodule Regional.DataTest do
 
   describe "regional_data!/0" do
     test "returns the decoded JSON data" do
-      assert is_map(Regional.Data.regional_data!())
+      assert is_map(Regional.Data.get_regional_data!())
     end
   end
 end

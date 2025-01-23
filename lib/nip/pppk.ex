@@ -2,7 +2,7 @@ defmodule Nip.Pppk do
   @moduledoc """
   Functions for working with NIP PPPK (Pegawai Pemerintah dengan Perjanjian Kerja)
 
-  NIP PNS consists of 18 digits that divided into 4 parts:
+  NIP PPPK consists of 18 digits divided into 6 parts:
   - `8` digits for birth date (`YYYYMMDD`)
   - `4` digits for TMT (Tanggal Mulai Tugas) (`YYYY`)
   - `1` digit that indicates the code for PPPK (`2`)
@@ -12,6 +12,20 @@ defmodule Nip.Pppk do
   """
 
   import Nip.Utils
+
+  @type nip_result() :: {:ok, t()} | {:error, String.t()}
+  @type t() :: %__MODULE__{
+          nip: String.t(),
+          birth_date: Date.t(),
+          tmt_date: Date.t(),
+          frequency: integer(),
+          sex: String.t(),
+          serial_number: String.t()
+        }
+  @type validated_nip_result() :: {:ok, String.t()} | {:error, String.t()}
+  @typep tmt_result() :: {:ok, Date.t()} | {:error, atom()}
+  @typep validate_pppk_code_result() :: {:ok, String.t()} | {:error, String.t()}
+  @typep frequency_result() :: {:ok, non_neg_integer()} | {:error, String.t()}
 
   defstruct [:nip, :birth_date, :tmt_date, :frequency, :sex, :serial_number]
 
@@ -34,7 +48,7 @@ defmodule Nip.Pppk do
       }}
 
   """
-  @spec parse(String.t()) :: {:ok, struct()} | {:error, String.t()}
+  @spec parse(String.t()) :: nip_result()
   def parse(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
          {:ok, birth_date} <- birth_date(nip),
@@ -55,23 +69,19 @@ defmodule Nip.Pppk do
     end
   end
 
-  @spec tmt(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
+  @spec tmt(String.t()) :: tmt_result()
   defp tmt(nip) when is_binary(nip) do
     year = nip |> String.slice(8..11) |> String.slice(0..3)
-    parses_date = Date.from_iso8601("#{year}-01-01")
 
-    case parses_date do
-      {:ok, date} -> {:ok, date}
-      {:error, reason} -> {:error, reason}
-    end
+    Date.from_iso8601("#{year}-01-01")
   end
 
-  @spec validate_pppk_code(String.t()) :: {:ok | :error, String.t()}
+  @spec validate_pppk_code(String.t()) :: validate_pppk_code_result()
   defp validate_pppk_code(nip) when is_binary(nip) do
     if String.slice(nip, 12..12) === "2", do: {:ok, "Valid"}, else: {:error, "Invalid PPPK code"}
   end
 
-  @spec frequency(String.t()) :: {:ok, non_neg_integer()} | {:error, String.t()}
+  @spec frequency(String.t()) :: frequency_result()
   defp frequency(nip) when is_binary(nip) do
     frequency = nip |> String.at(13) |> String.to_integer()
     if frequency in 1..9, do: {:ok, frequency}, else: {:error, "frequency out of range"}
@@ -88,7 +98,7 @@ defmodule Nip.Pppk do
       {:ok, "200012312024211001"}
 
   """
-  @spec validate_format(String.t()) :: {:ok | :error, String.t()}
+  @spec validate_format(String.t()) :: validated_nip_result()
   def validate_format(nip) when is_binary(nip) do
     with {:ok, _} <- validate_length(nip),
          {:ok, _} <- birth_date(nip),

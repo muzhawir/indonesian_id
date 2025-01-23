@@ -31,7 +31,7 @@ defmodule IndonesianId.MixProject do
   defp docs do
     [
       main: "readme",
-      logo: "./priv/logo.svg",
+      logo: "./priv/docs/logo.svg",
       extras: ["README.md"]
     ]
   end
