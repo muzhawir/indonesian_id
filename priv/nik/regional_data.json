@@ -4105,97 +4105,1030 @@
       "01": {
         "code": "01",
         "type": "Kabupaten",
-        "name": "Pesisir Selatan"
+        "name": "Pesisir Selatan",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Pancung Soal"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Ranah Pesisir"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Lengayang"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Batang Kapas"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "IV Jurai"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Bayang"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Koto XI Tarusan"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Sutera"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Linggo Sari Baganti"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Lunan"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Basa Ampek Balai Tapan"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "IV Nagari Bayang Utara"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Airpura"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Ranah Ampek Hulu Tapan"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Silaut"
+          }
+        }
       },
       "02": {
         "code": "02",
         "type": "Kabupaten",
-        "name": "Solok"
+        "name": "Solok",
+        "district": {
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pantai Cermin"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Lembah Gumanti"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Payung Sekaki"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Lembang Jaya"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Gunung Talang"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Bukit Sundi"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "IX Koto Sungai Lasi"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Kubung"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "X Koto Singkarak"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "X Koto Diatas"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Junjung Sirih"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Hiliran Gumanti"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Tigo Lurah"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Danau Kembar"
+          }
+        }
       },
       "03": {
         "code": "03",
         "type": "Kabupaten",
-        "name": "Sijunjung"
+        "name": "Sijunjung",
+        "district": {
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Tanjung Gadang"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Sijunjung"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "IV Nagari"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kamang Baru"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Lubuak Tarok"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Koto VII"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Sumpur Kudus"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Kupitan"
+          }
+        }
       },
       "04": {
         "code": "04",
         "type": "Kabupaten",
-        "name": "Tanah Datar"
+        "name": "Tanah Datar",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "X Koto"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Batipuh"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Rambatan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Lima Kaum"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Tanjung Emas"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Lintau Buo"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Sungayang"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Sungai Tarab"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Pariangan"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Salimpaung"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Padang Ganting"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Tanjuang Baru"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Lintau Buo Utara"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Batipuah Selatan"
+          }
+        }
       },
       "05": {
         "code": "05",
         "type": "Kabupaten",
-        "name": "Padang Pariaman"
+        "name": "Padang Pariaman",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lubuk Alung"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Batang Anai"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Nan Sabaris"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "2 x 11 Enam Lingkuang"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "VII Koto Sungai Sarik"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "V Koto Kampung Dalam"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Sungai Garingging"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Sungai Limau"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "IV Koto Aur Malintang"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Ulakan Tapakih"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Sintuak Toboh Gadang"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Padang Sago"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Batang Gasan"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "V Koto Timur"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "2 x 11 Kayu Tanam"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Patamuan"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Enam Lingkung"
+          }
+        }
       },
       "06": {
         "code": "06",
         "type": "Kabupaten",
-        "name": "Agam"
+        "name": "Agam",
+        "disctrict": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Tanjung Mutiara"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Lubuk Basung"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Tanjung Raya"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Matur"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "IV Koto"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Banuhampu"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Ampek Angkek"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Baso"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Tilatang Kamang"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Palupuh"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Pelembayan"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Sungai Pua"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Ampek Nagari"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Candung"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Kamang Magek"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Malalak"
+          }
+        }
       },
       "07": {
         "code": "07",
         "type": "Kabupaten",
-        "name": "Lima Puluh Kota"
+        "name": "Lima Puluh Kota",
+        "disctrict": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Suliki"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Guguak"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Payakumbuh"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Luak"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Harau"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Pangkalan Koto Baru"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Kapur IX"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Gunuang Omeh"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Lareh Sago Halaban"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Situjuah Limo Nagari"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Mungka"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Bukik Barisan"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Akabiluru"
+          }
+        }
       },
       "08": {
         "code": "08",
         "type": "Kabupaten",
-        "name": "Pasaman"
+        "name": "Pasaman",
+        "disctrict": {
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Bonjol"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Lubuk Sikaping"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Panti"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Mapat Tunggul"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Duo Koto"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Tigo Nagari"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Rao"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Mapat Tunggul Selatan"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Simpang Alahan Mati"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Padang Gelugur"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Rao Utara"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Rao Selatan"
+          }
+        }
       },
       "09": {
         "code": "09",
         "type": "Kabupaten",
-        "name": "Kepulauan Mentawai"
+        "name": "Kepulauan Mentawai",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Pagai Utara"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Sipora Selatan"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Siberut Selatan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Siberut Utara"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Siberut Barat"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Siberut Barat Daya"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Siberut Tengah"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Sipora Utara"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Sikakap"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Pagai Selatan"
+          }
+        }
       },
       "10": {
         "code": "10",
         "type": "Kabupaten",
-        "name": "Dharmasraya"
+        "name": "Dharmasraya",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Koto Baru"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Pulau Punjung"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Sungai Rumbai"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Sitiung"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Sembilan Koto"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Timpeh"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Koto Salak"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Tiumang"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Padang Laweh"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Asam Jujuhan"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Koto Besar"
+          }
+        }
       },
       "11": {
         "code": "11",
         "type": "Kabupaten",
-        "name": "Solok Selatan"
+        "name": "Solok Selatan",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Sangir"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Sungai Pagu"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Koto Parik Gadang Diateh"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Sangir Jujuan"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Sangir Batang Hari"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Pauh Duo"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Sangir Balai Janggo"
+          }
+        }
       },
       "12": {
         "code": "12",
         "type": "Kabupaten",
-        "name": "Pasaman Barat"
+        "name": "Pasaman Barat",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Sungaiberemas"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Lembah Melintang"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pasaman"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Talamau"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kinali"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Gunungtuleh"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Ranah Batahan"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Koto Balingka"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Sungaiaur"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Luhak Nan Duo"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Sasak Ranah Pesisir"
+          }
+        }
       },
       "71": {
         "code": "71",
         "type": "Kota",
-        "name": "Padang"
+        "name": "Padang",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Padang Selatan"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Padang Timur"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Padang Barat"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Padang Utara"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Bungus Teluk Kabung"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Lubuk Begalung"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Lubuk Kilangan"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Pauh"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Kuranji"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Nanggalo"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Koto Tangah"
+          }
+        }
       },
       "72": {
         "code": "72",
         "type": "Kota",
-        "name": "Solok"
+        "name": "Solok",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lubuk Sikarah"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Tanjung Harapan"
+          }
+        }
       },
       "73": {
         "code": "73",
         "type": "Kota",
-        "name": "Sawahlunto"
+        "name": "Sawahlunto",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lembah Segar"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Barangin"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Silungkang"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Talawi"
+          }
+        }
       },
       "74": {
         "code": "74",
         "type": "Kota",
-        "name": "Padang Panjang"
+        "name": "Padang Panjang",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Padang Panjang Timur"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Padang Panjang Barat"
+          }
+        }
       },
       "75": {
         "code": "75",
         "type": "Kota",
-        "name": "Bukittinggi"
+        "name": "Bukittinggi",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Guguak Panjang"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Mandiangin K. Selayan"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Aur Birugo Tigo Baleh"
+          }
+        }
       },
       "76": {
         "code": "76",
         "type": "Kota",
-        "name": "Payakumbuh"
+        "name": "Payakumbuh",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Payakumbuh Barat"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Payakumbuh Utara"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Payakumbuh Timur"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Lamposi Tigo Nagori"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Payakumbuh Selatan"
+          }
+        }
       },
       "77": {
         "code": "77",
         "type": "Kota",
-        "name": "Pariaman"
+        "name": "Pariaman",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Pariaman Tengah"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Pariaman Utara"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pariaman Selatan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Pariaman Timur"
+          }
+        }
       }
     }
   },
