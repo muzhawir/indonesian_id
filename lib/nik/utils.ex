@@ -1,6 +1,8 @@
 defmodule Nik.Utils do
   @moduledoc false
 
+  @type regional_data() :: {:ok, map()} | {:error, String.t()}
+
   @doc """
   Validate NIK length, must be 16 characters.
 
@@ -17,9 +19,10 @@ defmodule Nik.Utils do
   @doc """
   Get province code from NIK.
 
-  Returns `{:ok, %{province_map}}` if the province is found, otherwise `{:error, "Data not found"}`.
+  Returns `{:ok, %{province_data}}` if the province is found, otherwise
+  `{:error, "Province data not found"}`.
   """
-  @spec province_code(String.t()) :: {:ok, map()} | {:error, String.t()}
+  @spec province_code(String.t()) :: regional_data()
   def province_code(nik) do
     province_code = String.slice(nik, 0..1)
     Regional.find_province(%{province_code: province_code})
@@ -28,9 +31,9 @@ defmodule Nik.Utils do
   @doc """
   Get city code from NIK.
 
-  Returns `{:ok, %{city_map}}` if the city is found, otherwise `{:error, "Data not found"}`.
+  Returns `{:ok, %{city_data}}` if the city is found, otherwise `{:error, "City data not found"}`.
   """
-  @spec city_code(String.t()) :: {:ok, map()} | {:error, String.t()}
+  @spec city_code(String.t()) :: regional_data()
   def city_code(nik) do
     province_code = String.slice(nik, 0..1)
     city_code = String.slice(nik, 2..3)
@@ -40,9 +43,10 @@ defmodule Nik.Utils do
   @doc """
   Get district code from NIK.
 
-  Returns `{:ok, %{district_map}}` if the district is found, otherwise `{:error, "Data not found"}`.
+  Returns `{:ok, %{district_data}}` if the district is found, otherwise
+  `{:error, "District data not found"}`.
   """
-  @spec district_code(String.t()) :: {:ok, map()} | {:error, String.t()}
+  @spec district_code(String.t()) :: regional_data()
   def district_code(nik) do
     province_code = String.slice(nik, 0..1)
     city_code = String.slice(nik, 2..3)
@@ -59,7 +63,7 @@ defmodule Nik.Utils do
   Get birth date from NIK.
 
   Returns `{:ok, date}` with date sigil at the second element if the date is valid,
-  otherwise `{:error, reason}` from `Date.from_iso8601/1`.
+  otherwise `{:error, :error_code}` from `Date.from_iso8601/1`.
   """
   @spec birth_date(String.t()) :: {:ok, Date.t()} | {:error, atom()}
   def birth_date(nik) do
@@ -68,6 +72,7 @@ defmodule Nik.Utils do
     year = String.slice(nik, 10..11)
     normalized_day = normalize_day(day)
     normalized_year = normalize_year(year)
+
     Date.from_iso8601("#{normalized_year}-#{month}-#{normalized_day}")
   end
 
