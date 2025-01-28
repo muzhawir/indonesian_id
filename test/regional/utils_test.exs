@@ -5,7 +5,7 @@ defmodule Regional.UtilsTest do
 
   describe "search_code/2" do
     test "returns error when data is nil" do
-      assert Utils.search_code(nil, :province) == {:error, "Data not found"}
+      assert Utils.search_code(nil, :province) == {:error, "Province data not found"}
     end
 
     test "returns expected result when data is present" do
