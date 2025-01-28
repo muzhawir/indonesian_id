@@ -22,7 +22,7 @@ defmodule Nik.Utils do
   @spec province_code(String.t()) :: {:ok, map()} | {:error, String.t()}
   def province_code(nik) do
     province_code = String.slice(nik, 0..1)
-    Regional.find_province(province_code)
+    Regional.find_province(%{province_code: province_code})
   end
 
   @doc """
@@ -34,7 +34,7 @@ defmodule Nik.Utils do
   def city_code(nik) do
     province_code = String.slice(nik, 0..1)
     city_code = String.slice(nik, 2..3)
-    Regional.find_city(province_code, city_code)
+    Regional.find_city(%{province_code: province_code, city_code: city_code})
   end
 
   @doc """
@@ -47,7 +47,12 @@ defmodule Nik.Utils do
     province_code = String.slice(nik, 0..1)
     city_code = String.slice(nik, 2..3)
     district_code = String.slice(nik, 4..5)
-    Regional.find_district(province_code, city_code, district_code)
+
+    Regional.find_district(%{
+      province_code: province_code,
+      city_code: city_code,
+      district_code: district_code
+    })
   end
 
   @doc """
@@ -56,7 +61,7 @@ defmodule Nik.Utils do
   Returns `{:ok, date}` with date sigil at the second element if the date is valid,
   otherwise `{:error, reason}` from `Date.from_iso8601/1`.
   """
-  @spec birth_date(String.t()) :: {:ok, Date.t()} | {:error, String.t()}
+  @spec birth_date(String.t()) :: {:ok, Date.t()} | {:error, atom()}
   def birth_date(nik) do
     day = String.slice(nik, 6..7)
     month = String.slice(nik, 8..9)
