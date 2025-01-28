@@ -4,7 +4,7 @@ defmodule IndonesianId.MixProject do
   def project do
     [
       app: :indonesian_id,
-      version: "1.0.0",
+      version: "1.1.0",
       elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -18,7 +18,7 @@ defmodule IndonesianId.MixProject do
   end
 
   defp description do
-    "A package for parsing and validating Indonesian identification numbers."
+    "Package for parsing and looking-up various Indonesian ID numbers or codes."
   end
 
   defp package do
