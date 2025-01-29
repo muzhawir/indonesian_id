@@ -72,7 +72,6 @@ defmodule Nip.Pppk do
   @spec tmt(String.t()) :: tmt_result()
   defp tmt(nip) when is_binary(nip) do
     year = nip |> String.slice(8..11) |> String.slice(0..3)
-
     Date.from_iso8601("#{year}-01-01")
   end
 
