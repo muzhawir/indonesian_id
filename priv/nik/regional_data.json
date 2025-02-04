@@ -8622,52 +8622,762 @@
       "01": {
         "code": "01",
         "type": "Kabupaten",
-        "name": "Bengkulu Selatan"
+        "name": "Bengkulu Selatan",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Kedurang"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Seginim"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pino"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Manna"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kota Manna"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Pino Raya"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Kedurang Ilir"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Air Nipis"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Ulu Manna"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Bunga Mas"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Pasar Manna"
+          }
+        }
       },
       "02": {
         "code": "02",
         "type": "Kabupaten",
-        "name": "Rejang Lebong"
+        "name": "Rejang Lebong",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Kedurang"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Seginim"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pino"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Manna"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kota Manna"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kota Padang"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Padang Ulak Tanding"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Sindang Kelingi"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Curup"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Bermani Ulu"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Selupu Rejang"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Curup Utara"
+          },
+          "17": {
+            "code": "17",
+            "type": "Kecamatan",
+            "name": "Curup Timur"
+          },
+          "18": {
+            "code": "18",
+            "type": "Kecamatan",
+            "name": "Curup Selatan"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Curup Tengah"
+          },
+          "20": {
+            "code": "20",
+            "type": "Kecamatan",
+            "name": "Binduriang"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Sindang Beliti Ulu"
+          },
+          "22": {
+            "code": "22",
+            "type": "Kecamatan",
+            "name": "Sindang Dataran"
+          },
+          "23": {
+            "code": "23",
+            "type": "Kecamatan",
+            "name": "Sindang Beliti Ilir"
+          },
+          "24": {
+            "code": "24",
+            "type": "Kecamatan",
+            "name": "Bermani Ulu Raya"
+          }
+        }
       },
       "03": {
         "code": "03",
         "type": "Kabupaten",
-        "name": "Bengkulu Utara"
+        "name": "Bengkulu Utara",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Enggano"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Seginim"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pino"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Manna"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kota Manna"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kerkap"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Kota Arga Makmur"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Giri Mulya"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Padang Jaya"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Lais"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Batik Nau"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Ketahun"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Napal Putih"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Putri Hijau"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Air Besi"
+          },
+          "16": {
+            "code": "16",
+            "type": "Kecamatan",
+            "name": "Air Napal"
+          },
+          "19": {
+            "code": "19",
+            "type": "Kecamatan",
+            "name": "Hulu Palik"
+          },
+          "20": {
+            "code": "20",
+            "type": "Kecamatan",
+            "name": "Air Padang"
+          },
+          "21": {
+            "code": "21",
+            "type": "Kecamatan",
+            "name": "Arma Jaya"
+          },
+          "22": {
+            "code": "22",
+            "type": "Kecamatan",
+            "name": "Tanjung Agung Palik"
+          },
+          "23": {
+            "code": "23",
+            "type": "Kecamatan",
+            "name": "Ulok Kupai"
+          },
+          "24": {
+            "code": "24",
+            "type": "Kecamatan",
+            "name": "Pinang Raya"
+          },
+          "25": {
+            "code": "25",
+            "type": "Kecamatan",
+            "name": "Marga Sakti Sebelat"
+          }
+        }
       },
       "04": {
         "code": "04",
         "type": "Kabupaten",
-        "name": "Kaur"
+        "name": "Kaur",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Kinal"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Tanjung Kemuning"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Kaur Utara"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Kaur Tengah"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kaur Selatan"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Maje"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Nasal"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Semidang Gumay"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Kelam Tengah"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Luas"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Muara Sahung"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Tetap"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Lungkang Kule"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Padang Guci Hilir"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Padang Guci Hulu"
+          }
+        }
       },
       "05": {
         "code": "05",
         "type": "Kabupaten",
-        "name": "Seluma"
+        "name": "Seluma",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Sukaraja"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Seluma"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Talo"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Semidang Alas"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Semidang Alas Maras"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Air Periukan"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Lubuk Sandi"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Seluma Barat"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Seluma Timur"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Seluma Utara"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Seluma Selatan"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Talo Kecil"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Ulu Talo"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Ilir Talo"
+          }
+        }
       },
       "06": {
         "code": "06",
         "type": "Kabupaten",
-        "name": "Muko Muko"
+        "name": "Muko Muko",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lubuk Pinang"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Kota Mukomuko"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Teras Terunjam"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Pondok Suguh"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Ipuh"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Malin Deman"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Air Rami"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Teramang Jaya"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Selagan Raya"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Penarik"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "XIV Koto"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "V Koto"
+          },
+          "13": {
+            "code": "13",
+            "type": "Kecamatan",
+            "name": "Air Majunto"
+          },
+          "14": {
+            "code": "14",
+            "type": "Kecamatan",
+            "name": "Air Dikit"
+          },
+          "15": {
+            "code": "15",
+            "type": "Kecamatan",
+            "name": "Sungai Rumbai"
+          }
+        }
       },
       "07": {
         "code": "07",
         "type": "Kabupaten",
-        "name": "Lebong"
+        "name": "Lebong",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Lebong Utara"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Lebong Atas"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Lebong Tengah"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Lebong Selatan"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Rimbo Pengadang"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Topos"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Bingin Kuning"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Lebong Sakti"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Pelabai"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Amen"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Uram Jaya"
+          },
+          "12": {
+            "code": "12",
+            "type": "Kecamatan",
+            "name": "Pinang Belapis"
+          }
+        }
       },
       "08": {
         "code": "08",
         "type": "Kabupaten",
-        "name": "Kepahiang"
+        "name": "Kepahiang",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Bermani Ilir"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Ujan Mas"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Tebat Karai"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Kepahiang"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Merigi"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kebawetan"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Seberang Musi"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Muara Kemumu"
+          }
+        }
       },
       "09": {
         "code": "09",
         "type": "Kabupaten",
-        "name": "Bengkulu Tengah"
+        "name": "Bengkulu Tengah",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Karang Tinggi"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Talang Empat"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pondok Kelapa"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Pematang Tiga"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Pagar Jati"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Taba Penanjung"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Merigi Kelindang"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Merigi Sakti"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Pondok Kubang"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Bang Haji"
+          },
+          "11": {
+            "code": "11",
+            "type": "Kecamatan",
+            "name": "Semidang Lagan"
+          }
+        }
       },
       "71": {
         "code": "71",
         "type": "Kota",
-        "name": "Bengkulu"
+        "name": "Bengkulu",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Selebar"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Gading Cempaka"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Teluk Segara"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Muara Bangka Hulu"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kampung Melayu"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Ratu Agung"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Ratu Samban"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Sungai Serut"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Singaran Pati"
+          }
+        }
       }
     }
   },
