@@ -10639,37 +10639,286 @@
       "01": {
         "code": "01",
         "type": "Kabupaten",
-        "name": "Bangka"
+        "name": "Bangka",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Sungailiat"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Belinyu"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Merawang"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Mendo Barat"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Pemali"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Bakam"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Riau Silip"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Puding Besar"
+          }
+        }
       },
       "02": {
         "code": "02",
         "type": "Kabupaten",
-        "name": "Belitung"
+        "name": "Belitung",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Tanjung Pandan"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Membalong"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Selat Nasik"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Sijuk"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Badau"
+          }
+        }
       },
       "03": {
         "code": "03",
         "type": "Kabupaten",
-        "name": "Bangka Selatan"
+        "name": "Bangka Selatan",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Toboali"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Lepar Pongok"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Air Gegas"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Simpang Rimba"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Payung"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Tukak Sadai"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Pulaubesar"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Kepulauan Pongok"
+          }
+        }
       },
       "04": {
         "code": "04",
         "type": "Kabupaten",
-        "name": "Bangka Tengah"
+        "name": "Bangka Tengah",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Koba"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Pangkalan Baru"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Sungai Selan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Simpang Katis"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Namang"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Lubuk Besar"
+          }
+        }
       },
       "05": {
         "code": "05",
         "type": "Kabupaten",
-        "name": "Bangka Barat"
+        "name": "Bangka Barat",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Muntok"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Simpang Teritip"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Jebus"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Kelapa"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Tempilang"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Parittiga"
+          }
+        }
       },
       "06": {
         "code": "06",
         "type": "Kabupaten",
-        "name": "Belitung Timur"
+        "name": "Belitung Timur",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Manggar"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Gantung"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Dendang"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Kelapa Kampit"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Damar"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Simpang Renggiang"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Simpang Pesak"
+          }
+        }
       },
       "71": {
         "code": "71",
         "type": "Kota",
-        "name": "Pangkal Pinang"
+        "name": "Pangkal Pinang",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Bukitintan"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Taman Sari"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Pangkal Balam"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Rangkui"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Gerunggang"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Gabek"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Girimaya"
+          }
+        }
       }
     }
   },
@@ -10680,32 +10929,264 @@
       "01": {
         "code": "01",
         "type": "Kabupaten",
-        "name": "Administrasi Kepulauan Seribu"
+        "name": "Administrasi Kepulauan Seribu",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Kepulauan Seribu Utara"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Kepulauan Seribu Selatan"
+          }
+        }
       },
       "71": {
         "code": "71",
         "type": "Kota",
-        "name": "Administrasi Jakarta Pusat"
+        "name": "Administrasi Jakarta Pusat",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Gambir"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Sawah Besar"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Kemayoran"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Senen"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Cempaka Putih"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Menteng"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Tanah Abang"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Johar Baru"
+          }
+        }
       },
       "72": {
         "code": "72",
         "type": "Kota",
-        "name": "Administrasi Jakarta Utara"
+        "name": "Administrasi Jakarta Utara",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Penjaringan"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Tanjung Priok"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Koja"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Cilincing"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Pademangan"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kelapa Gading"
+          }
+        }
       },
       "73": {
         "code": "73",
         "type": "Kota",
-        "name": "Administrasi Jakarta Barat"
+        "name": "Administrasi Jakarta Barat",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Cengkareng"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Grogol Petamburan"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Taman Sari"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Tambora"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kebon Jeruk"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Kalideres"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Pal Merah"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Kembangan"
+          }
+        }
       },
       "74": {
         "code": "74",
         "type": "Kota",
-        "name": "Administrasi Jakarta Selatan"
+        "name": "Administrasi Jakarta Selatan",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Tebet"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Setiabudi"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Mampang Prapatan"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Pasar Minggu"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Kebayoran Lama"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Cilandak"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Kebayoran Baru"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Pancoran"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Jagakarsa"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Pesanggrahan"
+          }
+        }
       },
       "75": {
         "code": "75",
         "type": "Kota",
-        "name": "Administrasi Jakarta Timur"
+        "name": "Administrasi Jakarta Timur",
+        "district": {
+          "01": {
+            "code": "01",
+            "type": "Kecamatan",
+            "name": "Matraman"
+          },
+          "02": {
+            "code": "02",
+            "type": "Kecamatan",
+            "name": "Pulogadung"
+          },
+          "03": {
+            "code": "03",
+            "type": "Kecamatan",
+            "name": "Jatinegara"
+          },
+          "04": {
+            "code": "04",
+            "type": "Kecamatan",
+            "name": "Kramatjati"
+          },
+          "05": {
+            "code": "05",
+            "type": "Kecamatan",
+            "name": "Pasar Rebo"
+          },
+          "06": {
+            "code": "06",
+            "type": "Kecamatan",
+            "name": "Cakung"
+          },
+          "07": {
+            "code": "07",
+            "type": "Kecamatan",
+            "name": "Duren Sawit"
+          },
+          "08": {
+            "code": "08",
+            "type": "Kecamatan",
+            "name": "Makasar"
+          },
+          "09": {
+            "code": "09",
+            "type": "Kecamatan",
+            "name": "Ciracas"
+          },
+          "10": {
+            "code": "10",
+            "type": "Kecamatan",
+            "name": "Cipayung"
+          }
+        }
       }
     }
   },
